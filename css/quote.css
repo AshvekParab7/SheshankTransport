@@ -1,0 +1,227 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f9;
+  color: #222222;
+  line-height: 1.6;
+}
+
+header {
+  background: #102a43;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #f2a154;
+}
+
+.btn {
+  background: #f2a154;
+  color: #0d1b2a;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f7b86d;
+}
+
+.quote-hero {
+  background: url("../images/quote-bg.jpg") center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.quote-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 26, 44, 0.6);
+}
+
+.hero-text {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+}
+
+.quote-form-section {
+  text-align: center;
+  padding: 80px 10%;
+  background: #ffffff;
+}
+
+.quote-form-section h2 {
+  color: #102a43;
+  margin-bottom: 10px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: nowrap;
+}
+
+.form-container {
+  flex: 1 1 55%;
+  background: #f4f6f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.quote-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  resize: none;
+}
+
+.quote-form select {
+  color: #555;
+}
+
+.quote-form button {
+  background: #102a43;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quote-form button:hover {
+  background: #f2a154;
+  color: #0d1b2a;
+}
+
+.price-list {
+  flex: 1 1 40%;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.price-list h3 {
+  color: #102a43;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.price-list ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.price-list li {
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+}
+
+.price-list strong {
+  color: #f2a154;
+}
+
+.note {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+footer {
+  background: #0d1b2a;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .quote-container {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .price-list {
+    width: 100%;
+  }
+
+  .quote-form-section {
+    padding: 60px 8%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}

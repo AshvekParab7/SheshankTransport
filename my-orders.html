@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders | Sheshank Transport</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/my-orders.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">Sheshank Transport</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="my-orders.html" style="color: #f2a154">My Orders</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a
+              href="quote.html"
+              class="btn"
+              style="
+                background-color: #f2a154;
+                color: black;
+                padding: 8px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+              "
+              >Get a Quote</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="orders-section">
+      <h2>My Quote Requests & Orders</h2>
+      <p class="intro">
+        Track the status of your recent quote requests and material deliveries.
+      </p>
+
+      <div class="orders-container">
+        <div class="order-card">
+          <div class="order-header">
+            <h3>River Sand</h3>
+            <span class="status pending">Pending</span>
+          </div>
+          <p><strong>Requested On:</strong> Nov 8, 2025</p>
+          <p><strong>Quantity:</strong> 5 Brass</p>
+          <p><strong>Message:</strong> Need delivery at Porvorim site.</p>
+          <p class="arrival"><strong>Arrival Date:</strong> —</p>
+          <div class="order-actions">
+            <button class="cancel-btn">Delete Request</button>
+          </div>
+        </div>
+
+        <div class="order-card">
+          <div class="order-header">
+            <h3>Laterite Stones</h3>
+            <span class="status accepted">Accepted</span>
+          </div>
+          <p><strong>Requested On:</strong> Nov 6, 2025</p>
+          <p><strong>Quantity:</strong> 400 Blocks</p>
+          <p><strong>Message:</strong> For boundary wall project.</p>
+          <p class="arrival"><strong>Arrival Date:</strong> Nov 12, 2025</p>
+          <div class="order-actions">
+            <button class="cancel-btn">Delete Order</button>
+          </div>
+        </div>
+
+        <div class="order-card">
+          <div class="order-header">
+            <h3>Fly Ash Bricks</h3>
+            <span class="status accepted">Accepted</span>
+          </div>
+          <p><strong>Requested On:</strong> Nov 5, 2025</p>
+          <p><strong>Quantity:</strong> 3000 Bricks</p>
+          <p><strong>Message:</strong> For RCC construction at Mapusa.</p>
+          <p class="arrival"><strong>Arrival Date:</strong> Nov 11, 2025</p>
+          <div class="order-actions">
+            <button class="cancel-btn">Delete Order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Sheshank Transport | All Rights Reserved</p>
+      <p>Contact: +91 98234 63824 | sheshanktransport777@gmail.com</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".cancel-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (confirm("Are you sure you want to delete this request?")) {
+            btn.closest(".order-card").remove();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
