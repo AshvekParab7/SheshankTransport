@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Sheshank Transport</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to right, #1e3a5f, #324b6c);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: #ffffff;
+      padding: 45px 35px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      width: 340px;
+      text-align: center;
+    }
+
+    .brand-name {
+      font-size: 1.3em;
+      font-weight: 600;
+      color: #1e3a5f;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #1e3a5f;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input:focus {
+      border-color: #1e3a5f;
+      outline: none;
+      box-shadow: 0 0 4px rgba(30, 58, 95, 0.3);
+    }
+
+    button {
+      width: 100%;
+      background-color: #1e3a5f;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #16304f;
+      transform: scale(1.02);
+    }
+
+    p {
+      font-size: 13px;
+      margin-top: 20px;
+      color: #444;
+    }
+
+    a {
+      color: #1e3a5f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="brand-name">Sheshank Transport</div>
+    <div class="tagline">Reliable Material & Transport Services</div>
+
+    <h2>Login</h2>
+    <form action="index.html">
+      <input type="email" name="email" placeholder="Email Address">
+      <input type="password" name="password" placeholder="Password">
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+</body>
+</html>
